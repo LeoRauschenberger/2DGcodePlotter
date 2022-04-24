@@ -1,0 +1,7 @@
+(Cyrillic V)
+G0 X9.5 Y18
+G1 X0 Y18
+G1 X0 Y0
+G1 X8 Y0
+G2 X8 Y9 R4.5
+G1 X0 Y9
