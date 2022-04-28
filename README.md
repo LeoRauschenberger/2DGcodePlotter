@@ -9,7 +9,11 @@ The folder is still missing items of course.
 
 Degrees of freedom:
 
-f = 10                    # size increase factor \n
-p = 3                     # size of pen tip \n
-debugmode = 'y'           # y/n will display coordinates of G0 (goto) commands in window \n
-drawcolor = (211,211,211) # RGB code or name e.g. "blue" of color you want to draw with \n
+f = 10                    # size increase factor 
+
+p = 3                     # size of pen tip
+
+debugmode = 'y'           # y/n will display coordinates of G0 (goto) commands in window
+
+drawcolor = (211,211,211) # RGB code or name e.g. "blue" of color you want to draw with
+
