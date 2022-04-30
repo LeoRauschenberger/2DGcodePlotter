@@ -1,3 +1,7 @@
+# GCode Plotter
+# Program written by Leo Rauschenberger
+# Source: https://github.com/LeoRauschenberger/2DGcodePlotter
+
 import turtle
 import math
 
@@ -30,7 +34,7 @@ t.title("Python 2D GCode Plotter and Debugger")
 t.colormode(255)
 
 
-t.ht()
+t.ht() #render drawing-arrow invisible
 t.pensize(p)
 
 t.goto(0,0) # default start is 0,0
@@ -53,7 +57,7 @@ for line in Lines:
     prevlList=lList
     #strip newline character and split at spaces
     lList = line.strip().split(' ')
-    print("Line{}: {}".format(count, lList))
+    print("{}: {}".format(count, lList)) # prints out line number and contents
     #draw
     
     if lList[0] == 'G0':
@@ -65,11 +69,13 @@ for line in Lines:
             # now write position if desired
             if debugmode == "y":
                 t.color("black")
+                t.dot(p*2)
                 t.write("X"+str(round(x, 2))+" \nY"+str(round(y, 2)) , move=True,align='right',font=('Arial',8))
                 t.color(drawcolor)
                 t.up()
                 t.goto(x*f,y*f)
         else:
+            print("------------------------------------------------------")
             pass
     elif lList[0] == 'G1':
         x = float(lList[1].strip('X'))
