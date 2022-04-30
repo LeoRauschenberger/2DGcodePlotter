@@ -7,7 +7,7 @@ I added a few Cycrillic letters for testing. You can however use any Gcode of yo
 
 The folder is still missing items of course.
 
-Degrees of freedom:
+Edits you can make are:
 
 f = 10                    # size increase factor 
 
