@@ -28,8 +28,8 @@ def centers(x1, y1, x2, y2, r):
 t=turtle
 t.clear() #clear drawing window
 # screen layout (can mess up aspect ratio if chose too big!)
-#turtle.setworldcoordinates(-50, -50, 400, 300)
-t.setworldcoordinates(0, 0, 600, 300)
+t.setworldcoordinates(-50, -50, 400, 300)
+#t.setworldcoordinates(0, 0, 600, 300)
 t.title("Python 2D GCode Plotter and Debugger")
 t.colormode(255)
 
@@ -44,9 +44,12 @@ t.up()
 t.color(drawcolor)
 
 
-#Draw Gcode
+#Draw Gcode: link the file you want to draw here :)
+file1 = open("cyrillic/ltr_А.txt", "r")
 #file1 = open("cyrillic/ltr_Д.txt", "r")
-file1 = open("cyrillic/helloworld.txt", "r")
+#file1 = open("cyrillic/ltr_Б.txt", "r")
+#file1 = open("cyrillic/ltr_В.txt", "r")
+#file1 = open("cyrillic/ltr_Ж.txt", "r")
 Lines = file1.readlines()
 count = 0
 lList = []
@@ -98,8 +101,18 @@ for line in Lines:
         nl=centers(x1, y1, x2, y2, r)
         xc = nl[0][0]
         yc = nl[0][1]
-        print(xc, yc)
-        startheading = math.atan((x1-xc)/(y1-yc))*180/math.pi+90
+        if debugmode == "y":
+            print("circle center:",xc, yc)
+            t.up()
+            t.goto(xc*f,yc*f)
+            t.color("black")
+            t.dot(p*2)
+            t.write("CC" , move=True,align='left',font=('Arial',8))
+            t.color(drawcolor)
+            t.up()
+        startheading = math.atan((x1-xc)/(y1-yc))*180/math.pi
+        if startheading < 0:
+            startheading = startheading+90
         # go to starting point and draw
         t.goto(x1*f,y1*f)
         t.down()
