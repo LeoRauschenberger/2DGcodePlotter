@@ -1,4 +1,4 @@
-(Cyrillic D)
+(Д)
 G0 X0 Y-3.25
 G1 X0 Y0
 G1 X17.4 Y0

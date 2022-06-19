@@ -1,4 +1,4 @@
-(Cyrillic CH)
+(Ж)
 G0 X0 Y18
 G1 X9.5 Y8.25
 G1 X19 Y18

@@ -1,4 +1,4 @@
-(Cyrillic E)
+(Ё)
 G0 X10.9 Y18
 G1 X0 Y18
 G1 X0 Y9
