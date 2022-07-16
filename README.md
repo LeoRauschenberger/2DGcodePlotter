@@ -17,3 +17,5 @@ debugmode = 'y'           # y/n will display coordinates of G0 (goto) commands i
 
 drawcolor = (211,211,211) # RGB code or name e.g. "blue" of color you want to draw with
 
+The " Generate_GCode_Text V03.py " now produces code that can actually be used on the 3D printer. However, the M0 (=stop) command in the beginning may cause issues and you may have to replace or remove it.
+
