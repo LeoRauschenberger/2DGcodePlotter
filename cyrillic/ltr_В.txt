@@ -7,3 +7,5 @@ G3 X8 Y9 R4.5
 G1 X0 Y9
 G1 X8 Y9
 G3 X8 Y18 R4.5
+(art. offset)
+G0 X12.5 Y0

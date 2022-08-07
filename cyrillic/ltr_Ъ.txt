@@ -1,0 +1,9 @@
+()
+G0 X0 Y18
+G1 X3 Y18
+G1 X3 Y0
+G1 X10 Y0
+G3 X10 Y9 R4.5
+G1 X3 Y9
+(art. offset)
+G0 X14.5 Y0
