@@ -3,7 +3,7 @@ Plots Gcode using Python (2D only)
 
 The option to use arcs (G2 and G3 commands) is now working correctly.
 
-I added a few Cycrillic and Roman letters. You can however use any Gcode of your own.
+I added a Capital Cycrillic and all Latin letters. You can however use any Gcode of your own to plot.
 
 Edits you can make are:
 
